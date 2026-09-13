@@ -1,0 +1,305 @@
+/* ==================== RESET ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a3a 0%, #0f1a24 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==================== CABEÇALHO ==================== */
+header {
+    background: linear-gradient(135deg, #1a2a3a 0%, #0f1a24 100%);
+    color: white;
+    padding: 1rem 0;
+    border-bottom: 3px solid #ffc107;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.logo h1 span {
+    color: #ffc107;
+}
+
+.logo p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background: #ffc107;
+    color: #1a2a3a;
+}
+
+/* ==================== LAYOUT LATERAL ==================== */
+.main-content {
+    padding: 2rem 0;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    align-self: flex-start;
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar h3 {
+    color: #1a2a3a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+}
+
+.series-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.serie-btn {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2a3a 100%);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.serie-btn:hover {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: #1a2a3a;
+    transform: translateX(5px);
+}
+
+.serie-btn.active {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: #1a2a3a;
+    border-left: 4px solid #1a2a3a;
+}
+
+/* Área de Conteúdo */
+.content-area {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    min-height: 500px;
+}
+
+.serie-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.serie-header h2 {
+    color: #1a2a3a;
+    font-size: 1.8rem;
+}
+
+.serie-header p {
+    color: #ffc107;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* Vídeo */
+.video-container {
+    background: #000;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Grid de matérias */
+.materias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.materia-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.materia-card:hover {
+    background: #ffc107;
+    transform: translateY(-3px);
+}
+
+/* Jogos */
+.jogos-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+    border-radius: 12px;
+    color: white;
+}
+
+.jogos-section h3 {
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.jogo-card {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.jogo-card:hover {
+    background: #ffc107;
+    color: #1a2a3a;
+    transform: translateY(-3px);
+}
+
+/* Rodapé */
+footer {
+    background: #0f1a24;
+    color: #ccc;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .materias-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+/* ==================== VÍDEOS LOCAIS ==================== */
+.video-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    margin-bottom: 2rem;
+}
+
+.video-item h4 {
+    color: #1a2a3a;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .video-container video {
+        width: 100%;
+    }
+}

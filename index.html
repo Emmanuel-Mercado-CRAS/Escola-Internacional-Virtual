@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Internacional Virtual | Educando alunos para o mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== CABEÇALHO ==================== -->
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <h1>🌍 Escola <span>Internacional Virtual</span></h1>
+            <p>Educando alunos para o mundo</p>
+        </div>
+        <nav>
+            <ul>
+                <!-- BOTÕES DE NAVEGAÇÃO ENTRE AS 4 PÁGINAS -->
+                <li><a href="index.html" class="active">🏠 Início</a></li>
+                <li><a href="duelo-porques.html">⚔️ Duelo dos Porquês</a></li>
+                <li><a href="duelo-acentos.html">⚔️ Duelo dos Acentos</a></li>
+                <li><a href="duelo-crases.html">⚔️ Duelo das Crases</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+<div class="main-content">
+    <div class="container">
+        <div class="content-wrapper">
+
+            <!-- SIDEBAR COM AS SÉRIES -->
+            <aside class="sidebar">
+                <h3>📚 SÉRIES</h3>
+                <div class="series-buttons" id="series-buttons">
+
+                    <!-- SÉRIE MODELO (APRESENTAÇÃO DO CURSO) -->
+                    <button class="serie-btn active" data-serie="modelo">
+                        <span class="emoji">📖</span> Série Modelo (Apresentação)
+                    </button>
+
+                    <!-- ENSINO FUNDAMENTAL -->
+                    <button class="serie-btn" data-serie="1ano-fundamental"><span class="emoji">1️⃣</span> 1º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="2ano-fundamental"><span class="emoji">2️⃣</span> 2º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="3ano-fundamental"><span class="emoji">3️⃣</span> 3º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="4ano-fundamental"><span class="emoji">4️⃣</span> 4º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="5ano-fundamental"><span class="emoji">5️⃣</span> 5º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="6ano-fundamental"><span class="emoji">6️⃣</span> 6º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="7ano-fundamental"><span class="emoji">7️⃣</span> 7º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="8ano-fundamental"><span class="emoji">8️⃣</span> 8º Ano - Fundamental</button>
+                    <button class="serie-btn" data-serie="9ano-fundamental"><span class="emoji">9️⃣</span> 9º Ano - Fundamental</button>
+
+                    <!-- ENSINO MÉDIO -->
+                    <button class="serie-btn" data-serie="1ano-medio"><span class="emoji">📘</span> 1º Ano - Ensino Médio</button>
+                    <button class="serie-btn" data-serie="2ano-medio"><span class="emoji">📗</span> 2º Ano - Ensino Médio</button>
+                    <button class="serie-btn" data-serie="3ano-medio"><span class="emoji">📕</span> 3º Ano - Ensino Médio</button>
+                </div>
+            </aside>
+
+            <!-- ÁREA DE CONTEÚDO DINÂMICO -->
+            <main class="content-area" id="content-area">
+                <div id="dynamic-content">
+                    <!-- O conteúdo será carregado pelo JavaScript -->
+                    <div class="loading">🎓 Selecione uma série ao lado para começar!</div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== RODAPÉ ==================== -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Escola Internacional Virtual | Todos os direitos reservados</p>
+        <p>Desenvolvido por Wellington Emmanuel Caetano</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

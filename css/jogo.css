@@ -1,0 +1,306 @@
+/* ==================== AULA PDF ==================== */
+.aula-pdf-btn {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn-pdf {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: #1a2a3a;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-pdf:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* ==================== ARENA ==================== */
+.game-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.arena {
+    flex: 2;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a2a3a 100%);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.fighters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.fighter {
+    text-align: center;
+    flex: 1;
+}
+
+.fighter-avatar {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #3a5a7a 0%, #2a4a6a 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    border: 3px solid #ffc107;
+    transition: all 0.1s ease;
+}
+
+.fighter-avatar.attacking {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffc107;
+}
+
+.fighter-avatar span {
+    font-size: 5rem;
+}
+
+.fighter h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.hp-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.hp-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+.hp-bar.player {
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+}
+
+.hp-bar.enemy {
+    background: linear-gradient(90deg, #f44336, #ff9800);
+}
+
+.hp-text {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.vs {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc107;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.score {
+    text-align: center;
+}
+
+.score span:first-child {
+    color: #ffc107;
+    font-weight: bold;
+    display: block;
+}
+
+.score span:last-child {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* ==================== QUIZ ==================== */
+.quiz-area {
+    flex: 1.5;
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.nivel-badge {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.nivel-badge.Fácil { background: #4CAF50; color: white; }
+.nivel-badge.Médio { background: #ff9800; color: white; }
+.nivel-badge.Difícil { background: #f44336; color: white; }
+
+.pergunta {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a2a3a;
+    line-height: 1.4;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.opcao-btn {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.opcao-btn:hover {
+    background: #ffc107;
+    border-color: #ffc107;
+    transform: translateX(5px);
+}
+
+.opcao-btn.selected {
+    background: #ffc107;
+    border-color: #1a2a3a;
+}
+
+.btn-responder {
+    width: 100%;
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: #1a2a3a;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 1rem;
+}
+
+.btn-responder:hover:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-responder:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-reiniciar {
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-reiniciar:hover {
+    background: #1a2a3a;
+}
+
+.feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.feedback.correct {
+    background: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+.feedback.wrong {
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 4px solid #dc3545;
+}
+
+.feedback.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border-left: 4px solid #17a2b8;
+}
+
+/* Game Over */
+.game-over {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.game-over-content {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 400px;
+}
+
+.game-over-content button {
+    background: #ffc107;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .game-container { flex-direction: column; }
+    .fighters { flex-direction: column; }
+    .vs { transform: rotate(90deg); }
+    .fighter-avatar { width: 100px; height: 100px; }
+    .fighter-avatar span { font-size: 3rem; }
+}

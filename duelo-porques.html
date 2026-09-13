@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo dos Porquês | Escola Internacional Virtual</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <div class="logo">
+            <h1>🌍 Escola <span>Internacional Virtual</span></h1>
+            <p>Educando alunos para o mundo</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Início</a></li>
+                <li><a href="duelo-porques.html" class="active">⚔️ Duelo dos Porquês</a></li>
+                <li><a href="duelo-acentos.html">⚔️ Duelo dos Acentos</a></li>
+                <li><a href="duelo-crases.html">⚔️ Duelo das Crases</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main-content">
+    <div class="container">
+
+        <!-- BOTÃO PARA A AULA EM PDF -->
+        <div class="aula-pdf-btn">
+            <a href="pdfs/aula-porques.pdf" target="_blank" class="btn-pdf">
+                📖 Estudar a Aula em PDF (Uso dos Porquês)
+            </a>
+        </div>
+
+        <div class="game-container">
+            <!-- ARENA DO DUELO -->
+            <div class="arena">
+                <div class="fighters">
+                    <div class="fighter">
+                        <div class="fighter-avatar" id="player-avatar"><span>🧑‍🎓</span></div>
+                        <h3>VOCÊ</h3>
+                        <div class="hp-bar-container">
+                            <div class="hp-bar player" id="player-hp" style="width: 100%"></div>
+                        </div>
+                        <div class="hp-text" id="player-hp-text">❤️ 100 HP</div>
+                    </div>
+                    <div class="vs">⚔️ VS ⚔️</div>
+                    <div class="fighter">
+                        <div class="fighter-avatar" id="enemy-avatar"><span>😈</span></div>
+                        <h3>INIMIGO DOS PORQUÊS</h3>
+                        <div class="hp-bar-container">
+                            <div class="hp-bar enemy" id="enemy-hp" style="width: 100%"></div>
+                        </div>
+                        <div class="hp-text" id="enemy-hp-text">❤️ 100 HP</div>
+                    </div>
+                </div>
+                <div class="score-board">
+                    <div class="score"><span>🏆 VOCÊ</span><span id="player-score">0</span></div>
+                    <div class="score"><span>💀 INIMIGO</span><span id="enemy-score">0</span></div>
+                </div>
+            </div>
+
+            <!-- ÁREA DO QUIZ -->
+            <div class="quiz-area">
+                <div class="quiz-header">
+                    <span class="nivel-badge" id="nivel-badge">Fácil</span>
+                    <div class="pergunta" id="pergunta">Carregando...</div>
+                </div>
+                <div class="opcoes" id="opcoes"></div>
+                <button class="btn-responder" id="btn-responder">⚔️ RESPONDER E ATACAR</button>
+                <button class="btn-reiniciar" id="btn-reiniciar">🔄 Reiniciar Duelo</button>
+                <div class="feedback" id="feedback">💡 Responda corretamente para atacar!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Escola Internacional Virtual | Duelo dos Porquês</p>
+    </div>
+</footer>
+
+<script src="js/porques.js"></script>
+</body>
+</html>
