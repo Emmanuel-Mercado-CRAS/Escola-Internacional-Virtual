@@ -303,3 +303,349 @@ footer {
         width: 100%;
     }
 }
+
+
+/* ==================== HERO OBJETIVOS ==================== */
+.hero-objetivos {
+    background: linear-gradient(135deg, #1a2a3a 0%, #0f1a24 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-objetivos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffc107;
+}
+
+.hero-objetivos p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==================== INTRODUÇÃO ==================== */
+.objetivo-intro {
+    padding: 4rem 0;
+    background: white;
+}
+
+.intro-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.intro-text strong {
+    color: #1a2a3a;
+}
+
+/* ==================== PAÍSES PARCEIROS ==================== */
+.paises-parceiros {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.paises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.pais-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #ffc107;
+}
+
+.pais-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.pais-bandeira {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.pais-card h3 {
+    color: #1a2a3a;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.pais-descricao {
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.pais-destaques {
+    list-style: none;
+    padding: 0;
+}
+
+.pais-destaques li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.pais-destaques li:last-child {
+    border-bottom: none;
+}
+
+.pais-destaques strong {
+    color: #1a2a3a;
+}
+
+.pais-oportunidade {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    border-radius: 8px;
+    text-align: center;
+    color: #1a2a3a;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* ==================== COMO FUNCIONA ==================== */
+.como-funciona {
+    padding: 4rem 0;
+    background: white;
+}
+
+.passos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.passo-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+    border: 1px solid #e9ecef;
+}
+
+.passo-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffc107;
+}
+
+.passo-numero {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: #1a2a3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 10px rgba(255,193,7,0.3);
+}
+
+.passo-card h3 {
+    color: #1a2a3a;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.passo-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ==================== BENEFÍCIOS ==================== */
+.beneficios {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.beneficio-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.beneficio-card h3 {
+    color: #1a2a3a;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.beneficio-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ==================== OPORTUNIDADES ==================== */
+.oportunidades {
+    padding: 4rem 0;
+    background: white;
+}
+
+.oportunidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.oportunidade-card {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.oportunidade-card:hover {
+    transform: scale(1.03);
+}
+
+.oportunidade-card h3 {
+    color: #ffc107;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 0.5rem;
+}
+
+.oportunidade-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.oportunidade-card li {
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.oportunidade-card li::before {
+    content: "✓ ";
+    color: #ffc107;
+    font-weight: bold;
+}
+
+/* ==================== CTA FINAL ==================== */
+.cta-final {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    text-align: center;
+}
+
+.cta-final h2 {
+    color: #1a2a3a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-final p {
+    color: #1a2a3a;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-final .btn-primary {
+    background-color: #1a2a3a;
+    color: white;
+}
+
+.cta-final .btn-primary:hover {
+    background-color: #0f1a24;
+}
+
+.cta-final .btn-secondary {
+    background-color: transparent;
+    color: #1a2a3a;
+    border: 2px solid #1a2a3a;
+}
+
+.cta-final .btn-secondary:hover {
+    background-color: #1a2a3a;
+    color: white;
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 768px) {
+    .hero-objetivos h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-objetivos p {
+        font-size: 1rem;
+    }
+    
+    .paises-grid,
+    .passos-grid,
+    .beneficios-grid,
+    .oportunidades-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-final h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
